@@ -14,6 +14,9 @@ if (file_exists($db_config_file)) {
 	$username = getenv("MYSQL_USER");
 	$password = getenv("MYSQL_PASSWORD");
 	$using_config_file = "no";
+
+	var_dump(getenv("MYSQL_SERVICE_HOST"), getenv("MYSQL_SERVICE_PORT"), getenv("MYSQL_DATABASE"), getenv("MYSQL_USER"), getenv("MYSQL_PASSWORD"));
+	var_dump($using_config_file);
 }
 
 try {
