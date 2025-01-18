@@ -1,6 +1,6 @@
 <?php
 // Define configfile path
-$db_config_file = "/data/db.php";
+$db_config_file = "data/db.php";
 //
 if (file_exists($db_config_file)) {
 	// include config file if we have found it
