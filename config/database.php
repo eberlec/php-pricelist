@@ -27,6 +27,6 @@ try {
 
 // to handle connection error
 catch(PDOException $exception){
-	echo "Connection error: " . $exception->getMessage();
+	echo "Connection error xx: " . $exception->getMessage();
 }
 ?>
