@@ -7,6 +7,11 @@ if (file_exists($db_config_file)) {
 	require_once($db_config_file);
 	$using_config_file = "yes";
 	echo("yes");
+	echo $host;
+	echo $db_name;
+	echo $port;
+	echo $username;
+	echo $password;
 } else {
 	// If file isn't there, we'll assume you want env vars
 	$host = getenv("MYSQL_SERVICE_HOST");
