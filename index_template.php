@@ -19,7 +19,7 @@ echo "<div class='overflow-hidden'>";
 	echo "</a>";
 	
 	echo "<a href='read.php' class='btn btn-primary pull-right margin-bottom-1em margin-right-1em'>";
-		echo "<span class='glyphicon glyphicon-list'></span> Read x Records";
+		echo "<span class='glyphicon glyphicon-list'></span> Read Records";
 	echo "</a>";
 	
 echo "</div>";
