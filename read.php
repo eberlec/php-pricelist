@@ -17,8 +17,6 @@ if($action=='deleted'){
 	echo "<div class='alert alert-info'>Record was deleted.</div>";
 }
 
-echo "here we are..";
-
 //select all data
 $query = "SELECT p.id, p.name, p.description, p.price, c.name as category_name 
 			FROM products p 
