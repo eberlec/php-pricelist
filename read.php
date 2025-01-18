@@ -1,4 +1,4 @@
-<?php
+o<?php
 // include core configuration
 include 'config/core.php';
  
@@ -16,6 +16,8 @@ include_once "layout_head.php";
 if($action=='deleted'){
 	echo "<div class='alert alert-info'>Record was deleted.</div>";
 }
+
+echo "here we are..";
 
 //select all data
 $query = "SELECT p.id, p.name, p.description, p.price, c.name as category_name 
