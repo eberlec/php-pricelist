@@ -17,8 +17,6 @@ if (file_exists($db_config_file)) {
 	$using_config_file = "no";
 
 	echo("no");
-	echo(var_dump(getenv("MYSQL_SERVICE_HOST"), getenv("MYSQL_SERVICE_PORT"), getenv("MYSQL_DATABASE"), getenv("MYSQL_USER"), getenv("MYSQL_PASSWORD")));
-	echo(var_dump($using_config_file));
 }
 
 try {
@@ -27,6 +25,6 @@ try {
 
 // to handle connection error
 catch(PDOException $exception){
-	echo "Connection error xx: " . $exception->getMessage();
+	echo "Connection error: " . $exception->getMessage();
 }
 ?>
