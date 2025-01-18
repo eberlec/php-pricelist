@@ -6,6 +6,7 @@ if (file_exists($db_config_file)) {
 	// include config file if we have found it
 	require_once($db_config_file);
 	$using_config_file = "yes";
+	echo("yes");
 } else {
 	// If file isn't there, we'll assume you want env vars
 	$host = getenv("MYSQL_SERVICE_HOST");
@@ -15,6 +16,7 @@ if (file_exists($db_config_file)) {
 	$password = getenv("MYSQL_PASSWORD");
 	$using_config_file = "no";
 
+	echo("no");
 	echo(var_dump(getenv("MYSQL_SERVICE_HOST"), getenv("MYSQL_SERVICE_PORT"), getenv("MYSQL_DATABASE"), getenv("MYSQL_USER"), getenv("MYSQL_PASSWORD")));
 	echo(var_dump($using_config_file));
 }
