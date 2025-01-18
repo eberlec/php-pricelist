@@ -1,4 +1,4 @@
-o<?php
+<?php
 // include core configuration
 include 'config/core.php';
  
